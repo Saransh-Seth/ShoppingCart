@@ -1,0 +1,30 @@
+.headerContainer{
+  width: 100%;
+  height: 9.5em;
+  margin-top: 0.1px;
+  background-color: #01AAAA;
+  color: #FFFFFC;
+  font-family: 'Rubik', sans-serif;
+}
+.row{
+  padding-top: 2em;
+  padding-left: 1em;
+}
+.border-row{
+  border-right: 1px solid  #FFFFFC;
+  flex: 0 0 5% !important;
+  padding-left: .2em !important;
+}
+.small-text{
+  font-weight: bold;
+  font-size: 0.7em;
+}
+.big-text{
+  font-weight: lighter;
+  font-size: 2em;
+}
+.big-text>span{
+  font-size: 0.4em;
+  position: relative;
+  bottom: 1em;
+}

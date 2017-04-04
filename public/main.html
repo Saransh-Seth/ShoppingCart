@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="shoppingCart">
+
+<head>
+
+  <title>Shopping Cart</title>
+  <link rel="icon" type="image/png" href="public/resources/images/favicon.ico"> <!-- Title bar Icon -->
+  <link rel="stylesheet" href="public/resources/css/style.css"> <!-- Importing css -->
+
+  <!-- Importing CDNs -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Rubik|Rubik:Light" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <div ng-view></div>
+
+  <!-- Importing external local files -->
+  <script type="text/javascript" src="public/main.js"></script>
+  <script type="text/javascript" src="node_modules/angular/angular.js"></script>
+  <script type="text/javascript" src="node_modules/angular-route/angular-route.js"></script>
+  <script src="public/app.js"></script>
+  <script src="public/resources/js/itemListService.js"></script>
+  <!-- End import -->
+
+  <div class = "headerContainer">
+
+
+      <div class="row">
+        <div class="col-1 border-row">
+          <div class="col-1 small-text">TOTAL PRODUCTS</div>
+          <div class="col-1 big-text">11</div>
+        </div>
+        <div class="col-1">
+          <div class="col-1 small-text">TOTAL COST</div>
+          <div class="col-1 big-text"><span>$</span>1,944.80</div>
+
+        </div>
+
+    </div>
+
+
+    <div class="mainController" data-ng-app="ItemListApp">
+
+      <div data-ng-controller="itemListCtrl">
+
+      </div>
+    </div>
+
+  </body>
+
+  </html>
