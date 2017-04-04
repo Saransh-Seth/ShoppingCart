@@ -1,15 +1,13 @@
 'use strict'
 
 var express = require('express');
-var gzippo = require('gzippo');
 
 var app = express();
 
 app.use('/public', express.static(__dirname + '/public'));
-app.use(gzippo.staticGzip("" + __dirname + "/dist"));
 app.use('/node_modules', express.static(__dirname + '/node_modules'));
 
-app.listen('3000',function(){
+app.listen(process.env.PORT || 3000,function(){
     console.log('Server running at http://localhost:3000 !!')
 })
 
